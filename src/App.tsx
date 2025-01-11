@@ -10,10 +10,12 @@ import Skills from "./Components/Skills";
 
 function App() {
   return (
-    <div className="bg-[#1E1E1E] font-Poppins w-screen lg:overflow-scroll overflow-hidden">
+    <div className="bg-[#1E1E1E] font-Poppins w-screen overflow-hidden 2xl:px-0 px-2">
       <NavBar />
       <Landing />
+
       <Skills />
+
       <AboutMe></AboutMe>
       <EduExp></EduExp>
       <MySkills />

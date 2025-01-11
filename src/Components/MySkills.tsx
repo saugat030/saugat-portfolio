@@ -18,13 +18,13 @@ const MySkills = () => {
   };
 
   return (
-    <section className="xl:py-[60px] p-4 bg-[#19191D] xl:mt-28 mt-14">
+    <section className="p-4 bg-[#19191D] xl:mt-28 mt-14">
       <div className="container mx-auto flex flex-col gap-14">
         <motion.h1
           initial={{ x: -300 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 2, type: "spring" }}
-          className="cursor-default xl:text-5xl text-3xl text-white font-bold w-56 relative after:absolute after:w-full after:h-[4px] after:bg-[#FF8E5E] after:-bottom-1 after:left-0 after:scale-x-0 after:origin-right after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left"
+          className="cursor-default xl:text-4xl 2xl:text-5xl text-3xl text-white font-bold w-full relative after:absolute xl:after:w-40 2xl:w-44 after:h-[4px] after:bg-[#FF8E5E] after:-bottom-1 after:left-0 after:scale-x-0 after:origin-right after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left"
         >
           My <span className="text-orange-400">skills</span>
         </motion.h1>
