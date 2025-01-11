@@ -15,22 +15,22 @@ const ProjectCard = (props: projectCard) => {
         </h1>
         <div className="grid grid-cols-2 w-full gap-2 px-2">
           <img
-            src={`/MyProjectsImg/${props.img1}.png`}
+            src={`MyProjectsImg/${props.img1}.png`}
             alt=""
             className="rounded-xl duration-200  transform-gpu  hover:-rotate-2 hover:scale-105 h-[126px] w-full"
           />
           <img
-            src={`/MyProjectsImg/${props.img2}.png`}
+            src={`MyProjectsImg/${props.img2}.png`}
             alt=""
             className="rounded-xl duration-200 hover:-rotate-2 hover:scale-105 h-[126px]"
           />
           <img
-            src={`/MyProjectsImg/${props.img3}.png`}
+            src={`MyProjectsImg/${props.img3}.png`}
             alt=""
             className="rounded-xl duration-200 hover:-rotate-2 hover:scale-105 h-[126px]"
           />
           <img
-            src={`/MyProjectsImg/${props.img4}.png`}
+            src={`MyProjectsImg/${props.img4}.png`}
             alt=""
             className="rounded-xl duration-200 hover:-rotate-2 hover:scale-105 h-[126px] w-full"
           />
@@ -53,7 +53,7 @@ const ProjectCard = (props: projectCard) => {
         </h2>
       </div>
       <img
-        src={`/MyProjectsImg/${props.img1}.png`}
+        src={`MyProjectsImg/${props.img1}.png`}
         alt=""
         className="object-cover group-hover:blur-xl h-full"
       />

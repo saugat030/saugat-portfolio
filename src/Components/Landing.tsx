@@ -34,7 +34,7 @@ const Landing = () => {
         className="flex-1 flex justify-center items-center"
       >
         <img
-          src="/me2.jpg"
+          src="me2.jpg"
           alt="Photo"
           className="h-72 xl:h-[290px] 2xl:h-auto rounded-2xl"
         />
