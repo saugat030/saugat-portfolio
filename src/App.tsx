@@ -13,9 +13,7 @@ function App() {
     <div className="bg-[#1E1E1E] font-Poppins w-screen overflow-hidden 2xl:px-0 px-2">
       <NavBar />
       <Landing />
-
       <Skills />
-
       <AboutMe></AboutMe>
       <EduExp></EduExp>
       <MySkills />
