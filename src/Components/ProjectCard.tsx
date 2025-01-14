@@ -8,7 +8,7 @@ type projectCard = {
 };
 const ProjectCard = (props: projectCard) => {
   return (
-    <figure className="rounded-2xl hover:w-[500px] group hover:h-[600px] overflow-hidden h-[260px] transform duration-700 border border-gray-600">
+    <figure className="rounded-2xl 2xl:hover:w-[500px] xl:hover:w-[450px] group hover:h-[600px] overflow-hidden h-[260px] transform duration-700 border border-gray-600">
       <div className="h-full absolute w-full hidden group-hover:flex flex-col justify-evenly items-center z-10 p-2">
         <h1 className="font-semibold text-3xl text-yellow-600 hover:underline">
           <a href="">{props.project_name}</a>

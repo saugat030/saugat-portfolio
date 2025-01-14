@@ -36,7 +36,7 @@ const Landing = () => {
         <img
           src="me2.jpg"
           alt="Photo"
-          className="h-72 xl:h-[290px] 2xl:h-auto rounded-2xl"
+          className="h-72 xl:h-[350px] 2xl:h-[620px] rounded-2xl"
         />
       </motion.figure>
     </section>
