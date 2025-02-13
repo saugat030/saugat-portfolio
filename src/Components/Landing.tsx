@@ -1,7 +1,19 @@
 import { motion } from "framer-motion";
 import TypewriterText from "./TypewriterText";
-
+import { useEffect, useState } from "react";
 const Landing = () => {
+  const img_arr: string[] = ["me.jpg", "", "me2.jpg", ""];
+  let index = 0;
+  const [currentimg, setCurrentImg] = useState<string>(img_arr[0]);
+  // setInterval(() => {
+  //   if (index == img_arr.length - 1) {
+  //     index = 0;
+  //   } else {
+  //     index++;
+  //   }
+  //   setCurrentImg(img_arr[index]);
+  // }, 10000);
+  console.log("rendering");
   return (
     <section className="flex lg:flex-row flex-col-reverse justify-between container mx-auto p-2 h-auto lg:gap-0 gap-6 mt-12">
       <motion.div
@@ -26,19 +38,22 @@ const Landing = () => {
           INTERACTIONS THAT DELIGHT PEOPLE.
         </p>
       </motion.div>
-      <motion.figure
-        initial={{ x: 100 }}
-        whileInView={{ x: 0 }}
-        transition={{ duration: 2, type: "spring" }}
-        viewport={{ once: true }}
-        className="flex-1 flex justify-center items-center"
-      >
-        <img
-          src="me2.jpg"
-          alt="Photo"
-          className="h-72 xl:h-[350px] 2xl:h-[620px] rounded-2xl"
-        />
-      </motion.figure>
+      {currentimg != "" && (
+        <motion.figure
+          initial={{ x: 100 }}
+          whileInView={{ x: 0 }}
+          exit={{ x: 100 }}
+          transition={{ duration: 2, type: "spring" }}
+          viewport={{ once: true }}
+          className="flex-1 flex justify-center items-center"
+        >
+          <img
+            src={currentimg}
+            alt="Photo"
+            className="h-72 xl:h-[350px] 2xl:h-[620px] rounded-2xl"
+          />
+        </motion.figure>
+      )}
     </section>
   );
 };
